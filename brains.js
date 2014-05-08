@@ -188,6 +188,52 @@ function Game_Event()
 	{
 		print "You come upon a small town. Not many people are around but you see wanted posters with your face on it. You better be careful!" + "<br>"
 	}
+	else if ('GO FORWARD' || 'LOOK AROUND' || 'LOOK' || 'LOOK AROUND TOWN')
+	{
+		print "You see a Clothing Store, an Apothecary, and Bar." + "<br>"
+	}
+	else if ('TALK TO PERSON' || 'TALK TO TOWNSPERSON' || 'TALK TO TOWNSPEOPLE') 
+	{
+		print "You walk up to a townsperson and try to say hello. They squeal seeing you and run away." + "<br>"
+	}
+	else if ('GO INTO CLOTHING STORE' || 'GO TO CLOTHING STORE' || 'ENTER CLOTHING STORE')
+	{
+		print "You walk quickly into the clothing store without being seen. Whew! There are no other people in the store but the owner behind the counter." + "<br>"
+	}
+	else if ('LOOK' || 'LOOK AROUND' || 'LOOK AROUND STORE' || 'LOOK AT CLOTHES')
+	{
+		print "You see the proprietor and clothes of all kinds. Things look expensive."
+	}
+	else if ('TALK TO OWNER' || 'TALK TO PROPRIETOR')
+	{
+		print "The owner looks at you for a moment, and asks, 'What can I get for you?'" + "<br>"
+	}
+	else if ('BUY CLOTHES' || 'BUY DISGUISE' || 'GET DISGUISE' || 'GET CLOTHES')
+	{
+		print "Everything is here is pretty expensive. What do you have to pay with?"
+	}
+	else if ('GIVE MONEY' || 'GIVE COINS' || 'SHOW COINS' || 'USE COINS')
+	{
+		print "Hmm, well that's not much, the only thing you could purchase is this old servant's attire." + "<br>"
+		prompt(Do you want to purchase?)
+			if (YES || OK)
+				print "'Ok, here ya go!' Owner gives you SERVANT CLOTHES and takes COINS." + "<br>"
+			else
+				print "You shake your head no." + "<br>"
+	}
+	else if ('GO TO BAR' || 'ENTER BAR' || 'GO INTO BAR' || 'GO TO THE BAR')
+	{
+		print "You enter the bar. It's kind-of dirty and smokey."
+	}
+	else if ()
+	{
+		print ""
+	}
+	else if ()
+	{
+		print ""
+	}
+
 	else
 	{
 		print "You can't do that." + "<br>"
