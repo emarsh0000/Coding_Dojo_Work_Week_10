@@ -8,7 +8,7 @@ function Game_Event()
 
 	if('LOOK' || 'LOOK AT ROOM')
 	{
-		print "You see a dungeon. There is only one door out and no windows. There are bones in the corner, and a broken pail next to the dirty toilet. Eerie music plays from somewhere." + "<br>"
+		print "You're in a dungeon. There is only one door out and no windows. There are bones in the corner, and a broken pail next to the dirty toilet. Eerie music plays from somewhere." + "<br>"
 	}
 	else if ('LOOK AT DOOR')
 	{
@@ -184,7 +184,7 @@ function Game_Event()
 	{
 		print "Great! Now you have two arrows!" + "<br>"
 	}
-	else if ('GO FORWARD' || 'LEAVE' || 'LEAVE WALL' || 'GO DOWN WALL')
+	else if ('GO FORWARD' || 'LEAVE' || 'LEAVE WALL' || 'GO DOWN WALL' || 'LEAVE BAR' || 'LEAVE THE BAR' || 'EXIT BAR' || 'EXIT THE BAR' || 'EXIT')
 	{
 		print "You come upon a small town. Not many people are around but you see wanted posters with your face on it. You better be careful!" + "<br>"
 	}
@@ -202,7 +202,7 @@ function Game_Event()
 	}
 	else if ('LOOK' || 'LOOK AROUND' || 'LOOK AROUND STORE' || 'LOOK AT CLOTHES')
 	{
-		print "You see the proprietor and clothes of all kinds. Things look expensive."
+		print "You see the proprietor and clothes of all kinds. Things look expensive." + "<br>"
 	}
 	else if ('TALK TO OWNER' || 'TALK TO PROPRIETOR')
 	{
@@ -210,34 +210,62 @@ function Game_Event()
 	}
 	else if ('BUY CLOTHES' || 'BUY DISGUISE' || 'GET DISGUISE' || 'GET CLOTHES')
 	{
-		print "Everything is here is pretty expensive. What do you have to pay with?"
+		print "Everything is here is pretty expensive. What do you have to pay with?" + "<br>"
 	}
 	else if ('GIVE MONEY' || 'GIVE COINS' || 'SHOW COINS' || 'USE COINS')
 	{
 		print "Hmm, well that's not much, the only thing you could purchase is this old servant's attire." + "<br>"
 		prompt(Do you want to purchase?)
 			if (YES || OK)
-				print "'Ok, here ya go!' Owner gives you SERVANT CLOTHES and takes COINS." + "<br>"
+				print "'Ok, here ya go!' Owner gives you SERVANT CLOTHES and takes 3 COINS." + "<br>"
 			else
-				print "You shake your head no." + "<br>"
+				print "You shake your head no. The Owner nods, he understands." + "<br>"
 	}
 	else if ('GO TO BAR' || 'ENTER BAR' || 'GO INTO BAR' || 'GO TO THE BAR')
 	{
-		print "You enter the bar. It's kind-of dirty and smokey."
+		print "You enter the bar. It's kind-of dirty and smokey. Luckily for you, most customers seem too drunk to recognize you." + "<br>"
+	}
+	else if ('LOOK' || 'LOOK AROUND')
+	{
+		print "You see a barman, a couple spiders, empty glasses, and drunk patrons." + "<br>"
+	}
+	else if ('TAKE SPIDER' || 'TAKE SPIDERS' || 'CAPTURE SPIDER' || 'CAPTURE SPIDERS' || 'GET SPIDER' || 'GET SPIDERS')
+	{
+		print "You take an empty glass and trap a live spider. Gross, but maybe useful. To each his own." + "<br>"
+	}
+	else if ('KILL SPIDER' || 'KILL THE SPIDERS')
+	{
+		print "You take a glass and smoosh the spider. Yeeckkk." + "<br>"
+	}
+	else if ('TALK TO OWNER' || 'TALK TO BARMAN')
+	{
+		print "You go up and try to talk to barman. He doesn't seem receptive to anything but drink orders." + "<br>"
+	}
+	else if ('TALK TO DRUNK' || 'TALK TO CUSTOMER' || 'TALK TO CUSTOMERS' || 'TALK TO PATRONS' || 'TALK TO PATRON')
+	{
+		print "You try to talk to a drunken patron. He gets mad, tries to shoot you, and you figure you better leave him alone." + "<br>"
+	}
+	else if ('GO TO APOTHECARY' || 'ENTER APOTHECARY' || 'GO TO THE APOTHECARY' || 'ENTER THE APOTHECARY' || 'LOOK' || 'LOOK AROUND' || 'LOOK AT STORE')
+	{
+		print "You see a magical room full of dried plants, baskets of magical ingredients, and the owner who sits behind the counter." + "<br>"
+	}
+	else if ('TALK TO OWNER' || 'TALK TO THE OWNER')
+	{
+		print "" + "<br>"
 	}
 	else if ()
 	{
-		print ""
+		print "" + "<br>"
 	}
-	else if ()
-	{
-		print ""
+	else if()
+	{ 
+		print "" + "<br>"
 	}
-
-	else
+	else ()
 	{
 		print "You can't do that." + "<br>"
 	}
+
 
 
 }
